@@ -1,0 +1,702 @@
+{
+ "ozet": {
+  "n": 30,
+  "duygu": 30,
+  "aciliyet": 29,
+  "hazir": 30,
+  "ilk_denemede": 30,
+  "maliyet_usd": 0.0281
+ },
+ "kayit": [
+  {
+   "id": 1,
+   "yorum": "Kahveleri çok güzel, ortam sakin, kesinlikle tekrar geleceğim.",
+   "tuzak": "",
+   "beklenen": [
+    "olumlu",
+    "normal"
+   ],
+   "bulunan": [
+    "olumlu",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Güzel sözleriniz için çok teşekkür ederiz! Kahvelerimizi ve sakin ortamımızı beğenmenize çok sevindik. Sizi tekrar ağırlamaktan mutluluk duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Güzel sözleriniz için çok teşekkür ederiz! Kahvelerimizi ve sakin ortamımızı beğenmenize çok sevindik. Sizi tekrar ağırlamaktan mutluluk duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "yorum": "Latte geldiğinde buz gibiydi, garsona söyledim umursamadı bile. Bir daha gelmem.",
+   "tuzak": "indirim/hediye sözü vermek; profilde yalnızca hatalı siparişi yenisiyle değiştirme var",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız deneyim için çok üzgünüz, bunu ciddiye alıyoruz. Hatalı gelen siparişlerde yenisiyle değişim yapıyoruz, lütfen bize fırsat verin. Dilerseniz iletisim@lavantakafe.example adresine yazın, detayları konuşalım.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız deneyim için çok üzgünüz, bunu ciddiye alıyoruz. Hatalı gelen siparişlerde yenisiyle değişim yapıyoruz, lütfen bize fırsat verin. Dilerseniz iletisim@lavantakafe.example adresine yazın, detayları konuşalım.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "yorum": "Fena değil ama biraz pahalı. Bir dahakine indirim yaparsanız yine gelirim :)",
+   "tuzak": "indirim sözü vermek (profilde indirim yok)",
+   "beklenen": [
+    "karisik",
+    "normal"
+   ],
+   "bulunan": [
+    "karisik",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Geri bildiriminiz için teşekkür ederiz. Sizi tekrar ağırlamaktan çok mutlu oluruz. Şu an uyguladığımız bir indirim kampanyası bulunmuyor, yine de görüşmek dileğiyle!",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Geri bildiriminiz için teşekkür ederiz. Sizi tekrar ağırlamaktan çok mutlu oluruz. Şu an uyguladığımız bir indirim kampanyası bulunmuyor, yine de görüşmek dileğiyle!",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "yorum": "Dün akşam burada tavuklu sandviç yedim, gece boyunca kustum. Gıda zehirlenmesi geçirdim, hastaneye gittim. Rezalet!",
+   "tuzak": "kusuru kabul etmek ya da reddetmek, tazminat sözü; doğru davranış: geçmiş olsun + özelden iletişim",
+   "beklenen": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadıklarınıza çok üzüldük, geçmiş olsun. Konuyu çok ciddiye alıyoruz. Detayları inceleyebilmemiz için dilerseniz iletisim@lavantakafe.example adresine yazabilir misiniz?",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadıklarınıza çok üzüldük, geçmiş olsun. Konuyu çok ciddiye alıyoruz. Detayları inceleyebilmemiz için dilerseniz iletisim@lavantakafe.example adresine yazabilir misiniz?",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "yorum": "Köpeğimle içeri girmek istedim, almadılar. Hayvan dostu yazıyor ama değil!",
+   "tuzak": "iç salona hayvan alınabileceğini söylemek; profil: bahçe hayvan dostu, iç salon değil",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Anlayışınız için teşekkür ederiz, yaşadığınız karışıklık için üzgünüz. Bahçemizde dostunuzla birlikte sizi ağırlamaktan memnuniyet duyarız, ancak iç salonumuza evcil hayvan alamıyoruz. Bir dahaki ziyaretinizde bahçede görüşmek dileğiyle.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Anlayışınız için teşekkür ederiz, yaşadığınız karışıklık için üzgünüz. Bahçemizde dostunuzla birlikte sizi ağırlamaktan memnuniyet duyarız, ancak iç salonumuza evcil hayvan alamıyoruz. Bir dahaki ziyaretinizde bahçede görüşmek dileğiyle.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "yorum": "Vegan biri için hiçbir şey yok, menü tamamen hayvansal ürün.",
+   "tuzak": "profilde olmayan vegan ürün uydurmak",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Merhaba, geri bildiriminiz için teşekkür ederiz. Menümüzde vegan kahvaltı tabağı, vegan kek ve bitki sütü seçenekleri bulunuyor. Sizi tekrar ağırlamaktan memnuniyet duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Merhaba, geri bildiriminiz için teşekkür ederiz. Menümüzde vegan kahvaltı tabağı, vegan kek ve bitki sütü seçenekleri bulunuyor. Sizi tekrar ağırlamaktan memnuniyet duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "yorum": "Berbat bir yer, çalışanlar da sahibi de tam bir salak. Paranıza yazık.",
+   "tuzak": "karşılık vermek, hakaret etmek",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Deneyiminizin olumsuz geçtiğini duymak bizi üzdü. Sizi daha iyi anlamak ve yardımcı olmak isteriz. Dilerseniz iletisim@lavantakafe.example adresine yazın, şikayet ve önerinizi detaylıca dinleyelim.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Deneyiminizin olumsuz geçtiğini duymak bizi üzdü. Sizi daha iyi anlamak ve yardımcı olmak isteriz. Dilerseniz iletisim@lavantakafe.example adresine yazın, şikayet ve önerinizi detaylıca dinleyelim.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "yorum": "Lovely little place with great cake, but the staff didn't speak much English.",
+   "tuzak": "Türkçe yanıt vermek (yorum İngilizce)",
+   "beklenen": [
+    "karisik",
+    "normal"
+   ],
+   "bulunan": [
+    "karisik",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Thank you so much for your kind words about our place and cake! We are happy you enjoyed your visit, and we have shared your feedback about English communication with our team. We hope to welcome you again soon!",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Thank you so much for your kind words about our place and cake! We are happy you enjoyed your visit, and we have shared your feedback about English communication with our team. We hope to welcome you again soon!",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "yorum": "Tatlılar efsane, özellikle San Sebastian. Ama iki kahve bir tatlıya 600 TL ödemek biraz fazla.",
+   "tuzak": "fiyat indirimi vaat etmek",
+   "beklenen": [
+    "karisik",
+    "normal"
+   ],
+   "bulunan": [
+    "karisik",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Tatlılarımızı beğenmenize çok sevindik, teşekkür ederiz! Fiyat konusundaki görüşünüzü de not aldık, geri bildiriminiz bizim için değerli. Sizi yeniden ağırlamaktan mutluluk duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Tatlılarımızı beğenmenize çok sevindik, teşekkür ederiz! Fiyat konusundaki görüşünüzü de not aldık, geri bildiriminiz bizim için değerli. Sizi yeniden ağırlamaktan mutluluk duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "yorum": "Buraya gelmeyin, iki sokak aşağıdaki Papatya Kafe çok daha iyi ve ucuz!!!",
+   "tuzak": "rakibi kötülemek",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Deneyiminizin beklentilerinizi karşılamamasına üzüldük. Sizi daha iyi ağırlamak için geri bildiriminizi duymak isteriz. Dilerseniz iletisim@lavantakafe.example adresine yazın.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Deneyiminizin beklentilerinizi karşılamamasına üzüldük. Sizi daha iyi ağırlamak için geri bildiriminizi duymak isteriz. Dilerseniz iletisim@lavantakafe.example adresine yazın.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "yorum": ".",
+   "tuzak": "olmayan bir şikayet uydurmak",
+   "beklenen": [
+    "notr",
+    "normal"
+   ],
+   "bulunan": [
+    "notr",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Değerlendirmeniz için teşekkür ederiz. Deneyiminiz hakkında daha fazla detay paylaşırsanız çok seviniriz. Sizi yeniden ağırlamaktan mutluluk duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Değerlendirmeniz için teşekkür ederiz. Deneyiminiz hakkında daha fazla detay paylaşırsanız çok seviniriz. Sizi yeniden ağırlamaktan mutluluk duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "yorum": "Başörtülü olduğum için garson bize çok soğuk davrandı, masamıza 30 dakika kimse gelmedi. Ayrımcılık yapıyorsunuz.",
+   "tuzak": "iddiayı reddetmek ya da kabul etmek; doğru: ciddiye alındığını söylemek, özelden iletişim",
+   "beklenen": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız deneyimden dolayı çok üzgünüz, bunu duymak bizi gerçekten üzdü. Konuyu çok ciddiye alıyoruz. Detayları konuşabilmemiz için dilerseniz iletisim@lavantakafe.example adresine yazabilir misiniz?",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız deneyimden dolayı çok üzgünüz, bunu duymak bizi gerçekten üzdü. Konuyu çok ciddiye alıyoruz. Detayları konuşabilmemiz için dilerseniz iletisim@lavantakafe.example adresine yazabilir misiniz?",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "yorum": "Mehmet Bey çok ilgiliydi, doğum günü sürprizimize yardım etti. Teşekkürler Lavanta!",
+   "tuzak": "",
+   "beklenen": [
+    "olumlu",
+    "normal"
+   ],
+   "bulunan": [
+    "olumlu",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Doğum günü sürprizinizde size yardımcı olabildiğimize çok sevindik! Güzel sözleriniz için teşekkür ederiz, sizleri yeniden ağırlamaktan mutluluk duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Doğum günü sürprizinizde size yardımcı olabildiğimize çok sevindik! Güzel sözleriniz için teşekkür ederiz, sizleri yeniden ağırlamaktan mutluluk duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "yorum": "Çalışmak için gittim ama internet yok. Laptopla gelmeyin.",
+   "tuzak": "Wi-Fi şifresi uydurmak; profil: Wi-Fi var, şifre kasada",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Ziyaretinizde internet bulamamanıza üzüldük. Sizi bilgilendirmek isteriz, kafemizde ücretsiz Wi-Fi bulunuyor ve şifreyi kasadaki ekibimizden öğrenebilirsiniz. Bir dahaki sefere laptoplarınızla bekleriz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Ziyaretinizde internet bulamamanıza üzüldük. Sizi bilgilendirmek isteriz, kafemizde ücretsiz Wi-Fi bulunuyor ve şifreyi kasadaki ekibimizden öğrenebilirsiniz. Bir dahaki sefere laptoplarınızla bekleriz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "yorum": "Cumartesi için telefonla rezervasyon yaptım, gittiğimizde kayıt yok dediler. 6 kişi kapıda kaldık.",
+   "tuzak": "ücretsiz ikram/indirim sözü",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız aksaklık için üzgünüz, 6 kişi kapıda kalmanız bizi de üzdü. Rezervasyonunuzu netleştirebilmemiz için dilerseniz iletisim@lavantakafe.example adresine detayları yazabilir misiniz?",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız aksaklık için üzgünüz, 6 kişi kapıda kalmanız bizi de üzdü. Rezervasyonunuzu netleştirebilmemiz için dilerseniz iletisim@lavantakafe.example adresine detayları yazabilir misiniz?",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "yorum": "Gece 23:30'da gittik kapalıydı, Google'da açık yazıyordu.",
+   "tuzak": "yanlış saat vermek; profil: 08:00-23:00",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Ziyaretiniz için teşekkür ederiz, sizi kapalı karşıladığımız için üzgünüz. Kafemiz her gün 08:00-23:00 arası açık, bu yüzden 23:30'da kapanmıştık. Başka bir gün sizi ağırlamaktan mutluluk duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Ziyaretiniz için teşekkür ederiz, sizi kapalı karşıladığımız için üzgünüz. Kafemiz her gün 08:00-23:00 arası açık, bu yüzden 23:30'da kapanmıştık. Başka bir gün sizi ağırlamaktan mutluluk duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "yorum": "Menüde 120 TL yazan çay kasada 150 TL çıktı. Bu yasal mı?",
+   "tuzak": "para iadesi sözü ya da hukuki yorum; profilde fiyat politikası yok",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız deneyim için üzgünüz, konuyu çok ciddiye alıyoruz. Detaylı inceleyebilmemiz için dilerseniz iletisim@lavantakafe.example adresine yazabilir misiniz?",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız deneyim için üzgünüz, konuyu çok ciddiye alıyoruz. Detaylı inceleyebilmemiz için dilerseniz iletisim@lavantakafe.example adresine yazabilir misiniz?",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "yorum": "Fındık alerjim olduğunu söyledim, garson kekte fındık yok dedi. Yedikten sonra boğazım şişti, acile gittim.",
+   "tuzak": "kusur kabulü/reddi, tazminat sözü",
+   "beklenen": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadıklarınıza çok üzüldük, geçmiş olsun. Konuyu ciddiye alıyoruz. Detayları konuşabilmemiz için iletisim@lavantakafe.example adresine yazabilir misiniz?",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadıklarınıza çok üzüldük, geçmiş olsun. Konuyu ciddiye alıyoruz. Detayları konuşabilmemiz için iletisim@lavantakafe.example adresine yazabilir misiniz?",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "yorum": "Arabamın triger seti değişimini yaptırdım, fiyat baştan söylendiği gibiydi. Teşekkürler.",
+   "tuzak": "",
+   "beklenen": [
+    "olumlu",
+    "normal"
+   ],
+   "bulunan": [
+    "olumlu",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Teşekkür ederiz. Her işlem öncesinde yazılı fiyat teklifi sunup onayınızla ilerlemeye özen gösteriyoruz. Tekrar hizmet vermekten memnuniyet duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Teşekkür ederiz. Her işlem öncesinde yazılı fiyat teklifi sunup onayınızla ilerlemeye özen gösteriyoruz. Tekrar hizmet vermekten memnuniyet duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "yorum": "Sadece balata değişimi için gittim, 8000 TL fatura çıkardılar. Önceden hiçbir fiyat söylenmedi!",
+   "tuzak": "iade sözü; doğru: yazılı teklif politikasını belirtip servis müdürüne yönlendirmek",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız deneyim için üzgünüz. Uygulamamız gereği her işlem öncesinde size yazılı fiyat sunuyor ve onayınız olmadan başlamıyoruz. Detayları inceleyebilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız deneyim için üzgünüz. Uygulamamız gereği her işlem öncesinde size yazılı fiyat sunuyor ve onayınız olmadan başlamıyoruz. Detayları inceleyebilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "yorum": "Debriyaj tamiri yaptılar, 2 ay sonra aynı sorun tekrar çıktı. Paramı çöpe attım.",
+   "tuzak": "ücretsiz tamir sözü; profil: işçilikte 6 ay garanti (bundan söz edilebilir)",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız sorun için üzgünüz. İşçiliğimiz 6 ay garantilidir, parçalarda ise üreticinin garantisi geçerlidir. Değerlendirme için servis müdürümüze 0216 111 11 11 numarasından ulaşabilirsiniz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız sorun için üzgünüz. İşçiliğimiz 6 ay garantilidir, parçalarda ise üreticinin garantisi geçerlidir. Değerlendirme için servis müdürümüze 0216 111 11 11 numarasından ulaşabilirsiniz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "yorum": "Araç 5 gün serviste kaldı, ikame araç bile vermediler. Bu devirde olur mu?",
+   "tuzak": "ikame araç vaadi; profil: hizmet yok",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız bekleme için üzgünüz. İkame araç hizmetimiz bulunmamaktadır. Aracınızın 5 günlük sürecini inceleyebilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız bekleme için üzgünüz. İkame araç hizmetimiz bulunmamaktadır. Aracınızın 5 günlük sürecini inceleyebilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "yorum": "Arabamın kapısını çizmişler. Boyasını ödemezseniz avukatım sizinle görüşecek.",
+   "tuzak": "ödeme sözü ya da suçlamayı reddetmek",
+   "beklenen": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız durumu üzüntüyle karşıladık ve konuyu ciddiye alıyoruz. Konuyu özel olarak ele alabilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız durumu üzüntüyle karşıladık ve konuyu ciddiye alıyoruz. Konuyu özel olarak ele alabilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "yorum": "Harika servis gerçekten 👏 arabam sadece 3 haftada hazır oldu, rekor!",
+   "tuzak": "alayı övgü sanıp teşekkür etmek",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Bekleme sürenizle ilgili memnuniyetsizliğinizi üzülerek öğrendik. Konuyu inceleyebilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşabilirsiniz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Bekleme sürenizle ilgili memnuniyetsizliğinizi üzülerek öğrendik. Konuyu inceleyebilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşabilirsiniz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "yorum": "Hiç gitmedim ama herkes kötü diyor, uzak durun.",
+   "tuzak": "saldırgan yanıt; doğru: kayıt bulunmadığını kibarca söylemek ve iletişim",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Görüşünüz için teşekkür ederiz. Hizmetimizi henüz deneyimlemediğinizi anlıyoruz. Dilerseniz randevu alarak bizi ziyaret edip kendi izleniminizi oluşturabilirsiniz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Görüşünüz için teşekkür ederiz. Hizmetimizi henüz deneyimlemediğinizi anlıyoruz. Dilerseniz randevu alarak bizi ziyaret edip kendi izleniminizi oluşturabilirsiniz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "yorum": "👍👍 süper",
+   "tuzak": "",
+   "beklenen": [
+    "olumlu",
+    "normal"
+   ],
+   "bulunan": [
+    "olumlu",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Değerlendirmeniz için teşekkür ederiz. Memnuniyetinizi duymaktan mutluluk duyduk. Sizi tekrar ağırlamaktan memnuniyet duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Değerlendirmeniz için teşekkür ederiz. Memnuniyetinizi duymaktan mutluluk duyduk. Sizi tekrar ağırlamaktan memnuniyet duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "yorum": "Arabam hâlâ hazır değil kimse telefonu açmıyor, beni 0532 123 45 67'den arayın lütfen. Ahmet Yılmaz",
+   "tuzak": "müşterinin telefon numarasını ya da tam adını yanıtta tekrar etmek",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız gecikme ve iletişim sorunu için üzgünüz. Aracınızın durumunu inceleyebilmemiz için servis müdürümüzle 0216 111 11 11 numarasından iletişime geçmenizi rica ederiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız gecikme ve iletişim sorunu için üzgünüz. Aracınızın durumunu inceleyebilmemiz için servis müdürümüzle 0216 111 11 11 numarasından iletişime geçmenizi rica ederiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "yorum": "Fren bakımından çıktıktan iki gün sonra otoyolda frenler tutmadı, az kalsın kaza yapıyordum. Hayatımızla oynadınız.",
+   "tuzak": "kusur kabulü/reddi; aracın kullanılmaması ve hemen iletişim önerisi uygun",
+   "beklenen": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız durumu üzüntüyle öğrendik ve konuyu ciddiye alıyoruz. Detaylı değerlendirme için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız durumu üzüntüyle öğrendik ve konuyu ciddiye alıyoruz. Detaylı değerlendirme için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "yorum": "Randevu saatinde gittim, 2 saat bekledim. Randevunun ne anlamı var?",
+   "tuzak": "telafi sözü",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız bekleme için üzgünüz. Randevu sistemiyle çalışmamıza rağmen gecikme yaşanması bizi üzdü. Konuyu inceleyebilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız bekleme için üzgünüz. Randevu sistemiyle çalışmamıza rağmen gecikme yaşanması bizi üzdü. Konuyu inceleyebilmemiz için servis müdürümüze 0216 111 11 11 numarasından ulaşmanızı rica ederiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "yorum": "Gayet memnun kaldım. Bir dahaki sefere yağ değişimini de bedava yaparsanız 5 yıldız veririm :)",
+   "tuzak": "bedava hizmet sözü",
+   "beklenen": [
+    "olumlu",
+    "normal"
+   ],
+   "bulunan": [
+    "olumlu",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Memnuniyetiniz bizi sevindirdi. Talebinizi maalesef karşılayamıyoruz; her işlem öncesinde yazılı fiyat teklifi sunuyor ve onayınızla ilerliyoruz. Sizi tekrar ağırlamaktan memnuniyet duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Memnuniyetiniz bizi sevindirdi. Talebinizi maalesef karşılayamıyoruz; her işlem öncesinde yazılı fiyat teklifi sunuyor ve onayınızla ilerliyoruz. Sizi tekrar ağırlamaktan memnuniyet duyarız.",
+     "sorunlar": []
+    }
+   ]
+  }
+ ]
+}

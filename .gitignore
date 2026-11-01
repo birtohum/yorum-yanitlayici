@@ -1,0 +1,4 @@
+.venv/
+__pycache__/
+kayitlar/
+test/v3*.txt

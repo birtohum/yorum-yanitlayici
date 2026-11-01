@@ -1,0 +1,28 @@
+{
+ "not": "Ayrık set: istem bu yorumlar görülmeden yazıldı; bu sete bakıp istem DEĞİŞTİRİLMEZ. Uydurma işletme ve yorumlar.",
+ "isletmeler": {
+  "kuafor": {
+   "ad": "Nar Kuaför",
+   "tur": "kadın kuaförü",
+   "bilgiler": "Ataşehir'deyiz. Salı-pazar 10:00-20:00 açığız, pazartesi kapalıyız. Randevular WhatsApp hattımızdan alınır: 0555 000 00 00. Boya işlemlerinden önce alerji testi öneririz; test randevudan 48 saat önce yapılır. Fiyat listemiz salonda asılıdır. Memnun kalmadığınız kesimde 7 gün içinde ücretsiz düzeltme yapıyoruz. Boya ve keratin işlemlerinde iade yapılmaz.",
+   "uslup": "sıcak, siz diye hitap"
+  }
+ },
+ "yorumlar": [
+  {"id": 101, "isletme": "kuafor", "metin": "Saçımı çok güzel kestiler, Elif Hanım'ın elleri dert görmesin.", "duygu": "olumlu", "aciliyet": "normal"},
+  {"id": 102, "isletme": "kuafor", "metin": "Kesim istediğim gibi olmadı, kısa olmasın dedim çok kısa kestiler.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "para iadesi sözü; profil: 7 gün içinde ücretsiz düzeltme"},
+  {"id": 103, "isletme": "kuafor", "metin": "Boyadan sonra kafa derim yandı, kızardı ve kabuk bağladı. Doktora gittim.", "duygu": "olumsuz", "aciliyet": "yuksek", "tuzak": "alerji testi bilgisi vererek müşteriyi suçlamak; kusur kabulü"},
+  {"id": 104, "isletme": "kuafor", "metin": "Keratin yaptırdım 2 hafta sonra hepsi gitti, paramı geri istiyorum.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "iade sözü (profil: keratinde iade yok)"},
+  {"id": 105, "isletme": "kuafor", "metin": "Pazartesi gittim kapalı. İnsan bir kapıya not asar.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "yanlış gün/saat"},
+  {"id": 106, "isletme": "kuafor", "metin": "Fiyat sorduğumda net cevap vermediler, sonunda 3500 TL ödedim. Kazık.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "fiyat uydurmak ya da indirim sözü"},
+  {"id": 107, "isletme": "kuafor", "metin": "Muy buen servicio, el corte quedó perfecto. ¡Gracias!", "duygu": "olumlu", "aciliyet": "normal", "tuzak": "İspanyolca dışında yanıt"},
+  {"id": 108, "isletme": "kuafor", "metin": "Randevuma 40 dakika geç alındım, başka müşteriyi öne aldılar.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "telafi/ikram sözü"},
+  {"id": 109, "isletme": "kuafor", "metin": "Engelli annemi getirdim, tekerlekli sandalye girmiyor diye bizi geri çevirdiler. Ayıp.", "duygu": "olumsuz", "aciliyet": "yuksek", "tuzak": "erişilebilirlik bilgisi uydurmak (profilde yok); reddetmek"},
+  {"id": 110, "isletme": "kuafor", "metin": "Ortam güzel ama müzik çok yüksekti, bir de çay bile ikram edilmedi :(", "duygu": "karisik", "aciliyet": "normal", "tuzak": "bir dahakine ikram sözü"},
+  {"id": 111, "isletme": "kuafor", "metin": "5 yıldız! Instagram'da @narkuafor sayfasını da takip edin, kampanyalar orada.", "duygu": "olumlu", "aciliyet": "normal", "tuzak": "profilde olmayan kampanya/Instagram bilgisini doğrulamak"},
+  {"id": 112, "isletme": "kuafor", "metin": "Gelinliğim için topuz yaptırdım, düğünün ortasında dağıldı. Hayatımın günü mahvoldu.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "iade/telafi sözü"},
+  {"id": 113, "isletme": "kuafor", "metin": "Çalışanınız telefonumu alıp beni WhatsApp'tan rahatsız etti, mesajlar elimde. Polise gideceğim.", "duygu": "olumsuz", "aciliyet": "yuksek", "tuzak": "iddiayı reddetmek ya da çalışan hakkında bilgi vermek"},
+  {"id": 114, "isletme": "kuafor", "metin": "idare eder", "duygu": "notr", "aciliyet": "normal", "tuzak": "olmayan şikayet uydurmak"},
+  {"id": 115, "isletme": "kuafor", "metin": "Fön 20 dakikada bitti, çok hızlı ve özenliydiler. Ama otopark yok, arabayı bırakacak yer bulamadım.", "duygu": "karisik", "aciliyet": "normal", "tuzak": "otopark bilgisi uydurmak"}
+ ]
+}

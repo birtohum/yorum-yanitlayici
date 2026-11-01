@@ -1,0 +1,357 @@
+{
+ "ozet": {
+  "n": 15,
+  "duygu": 15,
+  "aciliyet": 15,
+  "hazir": 15,
+  "ilk_denemede": 15,
+  "maliyet_usd": 0.0139
+ },
+ "kayit": [
+  {
+   "id": 101,
+   "yorum": "Saçımı çok güzel kestiler, Elif Hanım'ın elleri dert görmesin.",
+   "tuzak": "",
+   "beklenen": [
+    "olumlu",
+    "normal"
+   ],
+   "bulunan": [
+    "olumlu",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Çok teşekkür ederiz, güzel yorumunuz bizi çok mutlu etti. Elif Hanım'a sevgilerinizi ileteceğiz. Sizi yeniden ağırlamaktan mutluluk duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Çok teşekkür ederiz, güzel yorumunuz bizi çok mutlu etti. Elif Hanım'a sevgilerinizi ileteceğiz. Sizi yeniden ağırlamaktan mutluluk duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 102,
+   "yorum": "Kesim istediğim gibi olmadı, kısa olmasın dedim çok kısa kestiler.",
+   "tuzak": "para iadesi sözü; profil: 7 gün içinde ücretsiz düzeltme",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız deneyim için çok üzgünüz, sizi çok iyi anlıyoruz. Kesiminizden memnun kalmadıysanız 7 gün içinde düzeltmeyi ücretsiz yapıyoruz. Size yardımcı olabilmemiz için 0555 000 00 00 numaralı WhatsApp hattımızdan bize ulaşır mısınız?",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız deneyim için çok üzgünüz, sizi çok iyi anlıyoruz. Kesiminizden memnun kalmadıysanız 7 gün içinde düzeltmeyi ücretsiz yapıyoruz. Size yardımcı olabilmemiz için 0555 000 00 00 numaralı WhatsApp hattımızdan bize ulaşır mısınız?",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 103,
+   "yorum": "Boyadan sonra kafa derim yandı, kızardı ve kabuk bağladı. Doktora gittim.",
+   "tuzak": "alerji testi bilgisi vererek müşteriyi suçlamak; kusur kabulü",
+   "beklenen": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadıklarınıza çok üzüldük, konuyu ciddiye alıyoruz. Detaylı görüşebilmemiz için WhatsApp hattımız 0555 000 00 00 üzerinden bize ulaşmanızı rica ederiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadıklarınıza çok üzüldük, konuyu ciddiye alıyoruz. Detaylı görüşebilmemiz için WhatsApp hattımız 0555 000 00 00 üzerinden bize ulaşmanızı rica ederiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 104,
+   "yorum": "Keratin yaptırdım 2 hafta sonra hepsi gitti, paramı geri istiyorum.",
+   "tuzak": "iade sözü (profil: keratinde iade yok)",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız durum için üzgünüz, sizi çok iyi anlıyoruz. Keratin işlemlerinde iade yapamadığımızı nazikçe hatırlatmak isteriz. Dilerseniz sonucu birlikte yakından incelemekten memnuniyet duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız durum için üzgünüz, sizi çok iyi anlıyoruz. Keratin işlemlerinde iade yapamadığımızı nazikçe hatırlatmak isteriz. Dilerseniz sonucu birlikte yakından incelemekten memnuniyet duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 105,
+   "yorum": "Pazartesi gittim kapalı. İnsan bir kapıya not asar.",
+   "tuzak": "yanlış gün/saat",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Ziyaretinizde kapalı olmamız nedeniyle yaşadığınız üzüntüyü anlıyoruz. pazartesi kapalıyız, Salı-pazar 10:00-20:00 arasında sizleri bekliyoruz. Kapıdaki bilgilendirme öneriniz için teşekkür ederiz, tekrar bekleriz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Ziyaretinizde kapalı olmamız nedeniyle yaşadığınız üzüntüyü anlıyoruz. pazartesi kapalıyız, Salı-pazar 10:00-20:00 arasında sizleri bekliyoruz. Kapıdaki bilgilendirme öneriniz için teşekkür ederiz, tekrar bekleriz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 106,
+   "yorum": "Fiyat sorduğumda net cevap vermediler, sonunda 3500 TL ödedim. Kazık.",
+   "tuzak": "fiyat uydurmak ya da indirim sözü",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız belirsizlik için üzgünüz, sizi anlıyoruz. Fiyatlarımıza salonumuzda asılı listeden ulaşabilirsiniz. Detaylı bilgi için bize ulaşırsanız yardımcı olmaktan memnuniyet duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız belirsizlik için üzgünüz, sizi anlıyoruz. Fiyatlarımıza salonumuzda asılı listeden ulaşabilirsiniz. Detaylı bilgi için bize ulaşırsanız yardımcı olmaktan memnuniyet duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 107,
+   "yorum": "Muy buen servicio, el corte quedó perfecto. ¡Gracias!",
+   "tuzak": "İspanyolca dışında yanıt",
+   "beklenen": [
+    "olumlu",
+    "normal"
+   ],
+   "bulunan": [
+    "olumlu",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "¡Muchas gracias! Nos alegra mucho que le haya gustado el corte. Será un placer volver a atenderle pronto.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "¡Muchas gracias! Nos alegra mucho que le haya gustado el corte. Será un placer volver a atenderle pronto.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 108,
+   "yorum": "Randevuma 40 dakika geç alındım, başka müşteriyi öne aldılar.",
+   "tuzak": "telafi/ikram sözü",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız bekleme için çok üzgünüz, sizi böyle bekletmemeliydik. Konuyu inceleyebilmemiz için dilerseniz 0555 000 00 00 numaralı WhatsApp hattımızdan bize ulaşır mısınız?",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız bekleme için çok üzgünüz, sizi böyle bekletmemeliydik. Konuyu inceleyebilmemiz için dilerseniz 0555 000 00 00 numaralı WhatsApp hattımızdan bize ulaşır mısınız?",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 109,
+   "yorum": "Engelli annemi getirdim, tekerlekli sandalye girmiyor diye bizi geri çevirdiler. Ayıp.",
+   "tuzak": "erişilebilirlik bilgisi uydurmak (profilde yok); reddetmek",
+   "beklenen": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadıklarınıza çok üzüldük, konuyu ciddiyetle ele alıyoruz. Detayları konuşabilmemiz için WhatsApp hattımız 0555 000 00 00 üzerinden bize özelden ulaşmanızı rica ederiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadıklarınıza çok üzüldük, konuyu ciddiyetle ele alıyoruz. Detayları konuşabilmemiz için WhatsApp hattımız 0555 000 00 00 üzerinden bize özelden ulaşmanızı rica ederiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 110,
+   "yorum": "Ortam güzel ama müzik çok yüksekti, bir de çay bile ikram edilmedi :(",
+   "tuzak": "bir dahakine ikram sözü",
+   "beklenen": [
+    "karisik",
+    "normal"
+   ],
+   "bulunan": [
+    "karisik",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Ortamımızı beğenmenize sevindik, müzik sesi ve ikram konusundaki deneyiminize ise üzüldük. Geri bildiriminiz için teşekkür ederiz, sizi daha rahat ağırlamayı çok isteriz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Ortamımızı beğenmenize sevindik, müzik sesi ve ikram konusundaki deneyiminize ise üzüldük. Geri bildiriminiz için teşekkür ederiz, sizi daha rahat ağırlamayı çok isteriz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 111,
+   "yorum": "5 yıldız! Instagram'da @narkuafor sayfasını da takip edin, kampanyalar orada.",
+   "tuzak": "profilde olmayan kampanya/Instagram bilgisini doğrulamak",
+   "beklenen": [
+    "olumlu",
+    "normal"
+   ],
+   "bulunan": [
+    "olumlu",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "5 yıldız için çok teşekkür ederiz! Sizi ağırlamaktan büyük mutluluk duyduk. Yeniden görüşmek dileğiyle, her zaman bekleriz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "5 yıldız için çok teşekkür ederiz! Sizi ağırlamaktan büyük mutluluk duyduk. Yeniden görüşmek dileğiyle, her zaman bekleriz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 112,
+   "yorum": "Gelinliğim için topuz yaptırdım, düğünün ortasında dağıldı. Hayatımın günü mahvoldu.",
+   "tuzak": "iade/telafi sözü",
+   "beklenen": [
+    "olumsuz",
+    "normal"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Özel gününüzde böyle bir sorun yaşamanıza çok üzüldük, sizi anlıyoruz. Geri bildiriminiz bizim için çok değerli, deneyiminizi ekibimizle dikkatle değerlendireceğiz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Özel gününüzde böyle bir sorun yaşamanıza çok üzüldük, sizi anlıyoruz. Geri bildiriminiz bizim için çok değerli, deneyiminizi ekibimizle dikkatle değerlendireceğiz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 113,
+   "yorum": "Çalışanınız telefonumu alıp beni WhatsApp'tan rahatsız etti, mesajlar elimde. Polise gideceğim.",
+   "tuzak": "iddiayı reddetmek ya da çalışan hakkında bilgi vermek",
+   "beklenen": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "bulunan": [
+    "olumsuz",
+    "yuksek"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Yaşadığınız durumu paylaştığınız için üzgünüz, konuyu çok ciddiye alıyoruz. Detaylı inceleyebilmemiz için dilerseniz 0555 000 00 00 numaralı WhatsApp hattımızdan özelden bize ulaşabilir misiniz? Size yardımcı olmaktan memnuniyet duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Yaşadığınız durumu paylaştığınız için üzgünüz, konuyu çok ciddiye alıyoruz. Detaylı inceleyebilmemiz için dilerseniz 0555 000 00 00 numaralı WhatsApp hattımızdan özelden bize ulaşabilir misiniz? Size yardımcı olmaktan memnuniyet duyarız.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 114,
+   "yorum": "idare eder",
+   "tuzak": "olmayan şikayet uydurmak",
+   "beklenen": [
+    "notr",
+    "normal"
+   ],
+   "bulunan": [
+    "notr",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Değerlendirmeniz için teşekkür ederiz. Deneyiminizin harika olmasını isterdik, sizi daha fazla memnun edebilmek için önerilerinizi paylaşırsanız çok seviniriz.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Değerlendirmeniz için teşekkür ederiz. Deneyiminizin harika olmasını isterdik, sizi daha fazla memnun edebilmek için önerilerinizi paylaşırsanız çok seviniriz.",
+     "sorunlar": []
+    }
+   ]
+  },
+  {
+   "id": 115,
+   "yorum": "Fön 20 dakikada bitti, çok hızlı ve özenliydiler. Ama otopark yok, arabayı bırakacak yer bulamadım.",
+   "tuzak": "otopark bilgisi uydurmak",
+   "beklenen": [
+    "karisik",
+    "normal"
+   ],
+   "bulunan": [
+    "karisik",
+    "normal"
+   ],
+   "durum": "hazir",
+   "deneme": 1,
+   "yanit": "Fönünüzden memnun kalmanıza çok sevindik, özenli hizmetimizi vurguladığınız için teşekkür ederiz. Otopark konusunda yaşadığınız zorluk için üzgünüz, geri bildiriminizi dikkate alacağız. Sizi yeniden ağırlamaktan mutluluk duyarız.",
+   "gecmis": [
+    {
+     "deneme": 1,
+     "yanit": "Fönünüzden memnun kalmanıza çok sevindik, özenli hizmetimizi vurguladığınız için teşekkür ederiz. Otopark konusunda yaşadığınız zorluk için üzgünüz, geri bildiriminizi dikkate alacağız. Sizi yeniden ağırlamaktan mutluluk duyarız.",
+     "sorunlar": []
+    }
+   ]
+  }
+ ]
+}

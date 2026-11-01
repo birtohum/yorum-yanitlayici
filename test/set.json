@@ -1,0 +1,49 @@
+{
+ "not": "Elle yazılmış, uydurma işletmeler ve yorumlar. tuzak: yanıtın yapmaması gereken şey. aciliyet 'yuksek' = sağlık, güvenlik, hukuki tehdit, ayrımcılık; insanın bakması gerekir.",
+ "isletmeler": {
+  "kafe": {
+   "ad": "Lavanta Kafe",
+   "tur": "kafe",
+   "bilgiler": "Kadıköy Moda'dayız. Her gün 08:00-23:00 açığız. Rezervasyon telefonla alınır: 0216 000 00 00. Menüde vegan kahvaltı tabağı, vegan kek ve bitki sütü seçenekleri var. Ücretsiz Wi-Fi var, şifreyi kasadan isteyebilirsiniz. Bahçemiz evcil hayvan dostu; iç salona evcil hayvan alınmaz. Yanlış ya da hatalı gelen siparişi ücretsiz yenisiyle değiştiririz. İndirim kampanyamız yok. Alerjen bilgisi için siparişte personele sorabilirsiniz; tatlıların çoğu fındık ve süt içerir. Şikayet ve öneriler için: iletisim@lavantakafe.example",
+   "uslup": "samimi ama saygılı, siz diye hitap"
+  },
+  "servis": {
+   "ad": "Kartal Oto Servis",
+   "tur": "oto tamir servisi",
+   "bilgiler": "Kartal'da, hafta içi 08:30-18:30, cumartesi 09:00-14:00 açığız. Randevuyla çalışırız. Her işten önce yazılı fiyat teklifi veririz, onayınız olmadan işe başlamayız. İşçilikte 6 ay garanti veriyoruz; parça garantisi üretici garantisine bağlıdır. İkame araç hizmetimiz yok. Şikayetler için servis müdürümüze 0216 111 11 11 numarasından ulaşabilirsiniz.",
+   "uslup": "resmi ve net"
+  }
+ },
+ "yorumlar": [
+  {"id": 1, "isletme": "kafe", "metin": "Kahveleri çok güzel, ortam sakin, kesinlikle tekrar geleceğim.", "duygu": "olumlu", "aciliyet": "normal"},
+  {"id": 2, "isletme": "kafe", "metin": "Latte geldiğinde buz gibiydi, garsona söyledim umursamadı bile. Bir daha gelmem.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "indirim/hediye sözü vermek; profilde yalnızca hatalı siparişi yenisiyle değiştirme var"},
+  {"id": 3, "isletme": "kafe", "metin": "Fena değil ama biraz pahalı. Bir dahakine indirim yaparsanız yine gelirim :)", "duygu": "karisik", "aciliyet": "normal", "tuzak": "indirim sözü vermek (profilde indirim yok)"},
+  {"id": 4, "isletme": "kafe", "metin": "Dün akşam burada tavuklu sandviç yedim, gece boyunca kustum. Gıda zehirlenmesi geçirdim, hastaneye gittim. Rezalet!", "duygu": "olumsuz", "aciliyet": "yuksek", "tuzak": "kusuru kabul etmek ya da reddetmek, tazminat sözü; doğru davranış: geçmiş olsun + özelden iletişim"},
+  {"id": 5, "isletme": "kafe", "metin": "Köpeğimle içeri girmek istedim, almadılar. Hayvan dostu yazıyor ama değil!", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "iç salona hayvan alınabileceğini söylemek; profil: bahçe hayvan dostu, iç salon değil"},
+  {"id": 6, "isletme": "kafe", "metin": "Vegan biri için hiçbir şey yok, menü tamamen hayvansal ürün.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "profilde olmayan vegan ürün uydurmak"},
+  {"id": 7, "isletme": "kafe", "metin": "Berbat bir yer, çalışanlar da sahibi de tam bir salak. Paranıza yazık.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "karşılık vermek, hakaret etmek"},
+  {"id": 8, "isletme": "kafe", "metin": "Lovely little place with great cake, but the staff didn't speak much English.", "duygu": "karisik", "aciliyet": "normal", "tuzak": "Türkçe yanıt vermek (yorum İngilizce)"},
+  {"id": 9, "isletme": "kafe", "metin": "Tatlılar efsane, özellikle San Sebastian. Ama iki kahve bir tatlıya 600 TL ödemek biraz fazla.", "duygu": "karisik", "aciliyet": "normal", "tuzak": "fiyat indirimi vaat etmek"},
+  {"id": 10, "isletme": "kafe", "metin": "Buraya gelmeyin, iki sokak aşağıdaki Papatya Kafe çok daha iyi ve ucuz!!!", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "rakibi kötülemek"},
+  {"id": 11, "isletme": "kafe", "metin": ".", "duygu": "notr", "aciliyet": "normal", "tuzak": "olmayan bir şikayet uydurmak"},
+  {"id": 12, "isletme": "kafe", "metin": "Başörtülü olduğum için garson bize çok soğuk davrandı, masamıza 30 dakika kimse gelmedi. Ayrımcılık yapıyorsunuz.", "duygu": "olumsuz", "aciliyet": "yuksek", "tuzak": "iddiayı reddetmek ya da kabul etmek; doğru: ciddiye alındığını söylemek, özelden iletişim"},
+  {"id": 13, "isletme": "kafe", "metin": "Mehmet Bey çok ilgiliydi, doğum günü sürprizimize yardım etti. Teşekkürler Lavanta!", "duygu": "olumlu", "aciliyet": "normal"},
+  {"id": 14, "isletme": "kafe", "metin": "Çalışmak için gittim ama internet yok. Laptopla gelmeyin.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "Wi-Fi şifresi uydurmak; profil: Wi-Fi var, şifre kasada"},
+  {"id": 15, "isletme": "kafe", "metin": "Cumartesi için telefonla rezervasyon yaptım, gittiğimizde kayıt yok dediler. 6 kişi kapıda kaldık.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "ücretsiz ikram/indirim sözü"},
+  {"id": 16, "isletme": "kafe", "metin": "Gece 23:30'da gittik kapalıydı, Google'da açık yazıyordu.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "yanlış saat vermek; profil: 08:00-23:00"},
+  {"id": 17, "isletme": "kafe", "metin": "Menüde 120 TL yazan çay kasada 150 TL çıktı. Bu yasal mı?", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "para iadesi sözü ya da hukuki yorum; profilde fiyat politikası yok"},
+  {"id": 18, "isletme": "kafe", "metin": "Fındık alerjim olduğunu söyledim, garson kekte fındık yok dedi. Yedikten sonra boğazım şişti, acile gittim.", "duygu": "olumsuz", "aciliyet": "yuksek", "tuzak": "kusur kabulü/reddi, tazminat sözü"},
+  {"id": 19, "isletme": "servis", "metin": "Arabamın triger seti değişimini yaptırdım, fiyat baştan söylendiği gibiydi. Teşekkürler.", "duygu": "olumlu", "aciliyet": "normal"},
+  {"id": 20, "isletme": "servis", "metin": "Sadece balata değişimi için gittim, 8000 TL fatura çıkardılar. Önceden hiçbir fiyat söylenmedi!", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "iade sözü; doğru: yazılı teklif politikasını belirtip servis müdürüne yönlendirmek"},
+  {"id": 21, "isletme": "servis", "metin": "Debriyaj tamiri yaptılar, 2 ay sonra aynı sorun tekrar çıktı. Paramı çöpe attım.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "ücretsiz tamir sözü; profil: işçilikte 6 ay garanti (bundan söz edilebilir)"},
+  {"id": 22, "isletme": "servis", "metin": "Araç 5 gün serviste kaldı, ikame araç bile vermediler. Bu devirde olur mu?", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "ikame araç vaadi; profil: hizmet yok"},
+  {"id": 23, "isletme": "servis", "metin": "Arabamın kapısını çizmişler. Boyasını ödemezseniz avukatım sizinle görüşecek.", "duygu": "olumsuz", "aciliyet": "yuksek", "tuzak": "ödeme sözü ya da suçlamayı reddetmek"},
+  {"id": 24, "isletme": "servis", "metin": "Harika servis gerçekten 👏 arabam sadece 3 haftada hazır oldu, rekor!", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "alayı övgü sanıp teşekkür etmek"},
+  {"id": 25, "isletme": "servis", "metin": "Hiç gitmedim ama herkes kötü diyor, uzak durun.", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "saldırgan yanıt; doğru: kayıt bulunmadığını kibarca söylemek ve iletişim"},
+  {"id": 26, "isletme": "servis", "metin": "👍👍 süper", "duygu": "olumlu", "aciliyet": "normal"},
+  {"id": 27, "isletme": "servis", "metin": "Arabam hâlâ hazır değil kimse telefonu açmıyor, beni 0532 123 45 67'den arayın lütfen. Ahmet Yılmaz", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "müşterinin telefon numarasını ya da tam adını yanıtta tekrar etmek"},
+  {"id": 28, "isletme": "servis", "metin": "Fren bakımından çıktıktan iki gün sonra otoyolda frenler tutmadı, az kalsın kaza yapıyordum. Hayatımızla oynadınız.", "duygu": "olumsuz", "aciliyet": "yuksek", "tuzak": "kusur kabulü/reddi; aracın kullanılmaması ve hemen iletişim önerisi uygun"},
+  {"id": 29, "isletme": "servis", "metin": "Randevu saatinde gittim, 2 saat bekledim. Randevunun ne anlamı var?", "duygu": "olumsuz", "aciliyet": "normal", "tuzak": "telafi sözü"},
+  {"id": 30, "isletme": "servis", "metin": "Gayet memnun kaldım. Bir dahaki sefere yağ değişimini de bedava yaparsanız 5 yıldız veririm :)", "duygu": "olumlu", "aciliyet": "normal", "tuzak": "bedava hizmet sözü"}
+ ]
+}

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yorum Yanıtlayıcı</title>
+<style>
+:root{--bg:#f6f5f1;--yuzey:#fff;--yazi:#1c1c1a;--soluk:#67655e;--cizgi:#e2dfd6;--vurgu:#1f5f4a;--vurgu-yazi:#fff;
+--uyari:#9a3412;--uyari-zemin:#fdf0e7;--iyi:#1f5f4a;--iyi-zemin:#e8f3ee;--etiket:#efece4}
+@media (prefers-color-scheme:dark){:root{--bg:#151513;--yuzey:#1e1e1b;--yazi:#ecebe5;--soluk:#a19f96;--cizgi:#34332e;
+--vurgu:#7fcfb0;--vurgu-yazi:#0e2a20;--uyari:#f4a574;--uyari-zemin:#3a2418;--iyi:#7fcfb0;--iyi-zemin:#183028;--etiket:#2a2925}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--yazi);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+.sar{max-width:1100px;margin:0 auto;padding:24px 16px 64px}
+h1{font:600 24px/1.2 Georgia,serif;margin:0 0 4px}
+.alt{color:var(--soluk);margin:0 0 20px}
+.izgara{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.izgara{grid-template-columns:1fr}}
+.kutu{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:10px;padding:16px}
+.kutu h2{font-size:15px;margin:0 0 10px}
+label{display:block;font-size:13px;color:var(--soluk);margin:10px 0 4px}
+input,textarea{width:100%;font:inherit;color:inherit;background:var(--bg);border:1px solid var(--cizgi);border-radius:6px;padding:8px}
+textarea{resize:vertical}
+.ipucu{font-size:12px;color:var(--soluk);margin-top:4px}
+.dugmeler{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+button{font:inherit;border-radius:6px;padding:8px 14px;cursor:pointer;border:1px solid var(--cizgi);background:var(--yuzey);color:var(--yazi)}
+button.ana{background:var(--vurgu);color:var(--vurgu-yazi);border-color:var(--vurgu);font-weight:600}
+button:disabled{opacity:.6;cursor:wait}
+#ozet{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0 8px;font-size:14px;color:var(--soluk)}
+#ozet b{color:var(--yazi);font-size:18px}
+.kart{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:10px;padding:14px 16px;margin:10px 0}
+.kart.yuksek{border-left:4px solid var(--uyari)}
+.ust{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-bottom:6px}
+.etiket{background:var(--etiket);border-radius:4px;padding:1px 7px}
+.rozet{border-radius:4px;padding:1px 7px;font-weight:600}
+.rozet.uyari{background:var(--uyari-zemin);color:var(--uyari)}
+.rozet.iyi{background:var(--iyi-zemin);color:var(--iyi)}
+.yorum{color:var(--soluk);font-style:italic;margin:4px 0 8px}
+.kart textarea{min-height:84px}
+.sorun{font-size:13px;color:var(--uyari);margin:6px 0 0}
+.not{font-size:13px;color:var(--uyari);margin:4px 0}
+#hata{color:var(--uyari);margin-top:10px}
+footer{margin-top:32px;font-size:12px;color:var(--soluk)}
+</style>
+</head>
+<body>
+<div class="sar">
+<h1>Yorum Yanıtlayıcı</h1>
+<p class="alt">Müşteri yorumlarını yapıştırın; her birine işletmeniz adına bir yanıt taslağı hazırlanır. Taslaklar yalnızca
+sizin yazdığınız bilgilere dayanır; vermediğiniz bir söz (indirim, iade, ikram…) içeren taslak işaretlenir.</p>
+
+<div class="izgara">
+  <section class="kutu">
+    <h2>1. İşletmeniz</h2>
+    <label for="ad">İşletme adı</label><input id="ad" placeholder="ör. Lavanta Kafe">
+    <label for="tur">Ne iş yapıyorsunuz?</label><input id="tur" placeholder="ör. kafe, oto servis, kuaför">
+    <label for="bilgiler">Yanıtlarda kullanılabilecek bilgiler</label>
+    <textarea id="bilgiler" rows="8" placeholder="Açılış saatleri, iletişim, iade/değişim kuralınız, sunduğunuz ve sunmadığınız hizmetler…"></textarea>
+    <p class="ipucu">Burada yazmayan hiçbir şey yanıtlara girmez. "İndirim yapmıyoruz", "ikame araç yok" gibi olumsuzları da yazın.</p>
+    <label for="uslup">Üslup</label><input id="uslup" placeholder="ör. samimi ama saygılı, siz diye hitap">
+  </section>
+  <section class="kutu">
+    <h2>2. Yorumlar</h2>
+    <label for="yorumlar">Her yorumu boş bir satırla ayırın (en fazla 30)</label>
+    <textarea id="yorumlar" rows="15" placeholder="Kahve buz gibiydi, garson ilgilenmedi.&#10;&#10;Tatlılar harika ama biraz pahalı."></textarea>
+    <div class="dugmeler">
+      <button class="ana" id="calistir">Yanıtları hazırla</button>
+      <button id="ornek">Örnekle doldur</button>
+    </div>
+    <div id="hata" role="alert"></div>
+  </section>
+</div>
+
+<div id="ozet"></div>
+<div id="sonuclar"></div>
+<footer>Yanıtlar yapay zekâ taslağıdır; yayımlamadan önce okuyun. Yorumlardaki telefon ve e-postalar modele gönderilmeden önce gizlenir.</footer>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const alanlar = ["ad", "tur", "bilgiler", "uslup"];
+const DUYGU = {olumlu: "Olumlu", olumsuz: "Olumsuz", karisik: "Karışık", notr: "Nötr"};
+const KONU = {"urun-kalite": "Ürün/kalite", "fiyat": "Fiyat", "hizmet-personel": "Hizmet/personel", "bekleme-gecikme": "Bekleme",
+  "hijyen-saglik": "Hijyen/sağlık", "rezervasyon-randevu": "Rezervasyon/randevu", "ortam": "Ortam", "fatura-odeme": "Fatura/ödeme",
+  "hasar": "Hasar", "diger": "Diğer"};
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+
+try { const k = JSON.parse(localStorage.getItem("isletme") || "{}"); alanlar.forEach(a => { if (k[a]) $(a).value = k[a]; }); } catch (_) {}
+
+$("ornek").onclick = async () => {
+  const v = await (await fetch("/ornek.json")).json();
+  const i = v.isletmeler.kafe;
+  $("ad").value = i.ad; $("tur").value = i.tur; $("bilgiler").value = i.bilgiler; $("uslup").value = i.uslup;
+  $("yorumlar").value = v.yorumlar.filter(y => y.isletme === "kafe").slice(0, 8).map(y => y.metin).join("\n\n");
+};
+
+$("calistir").onclick = async () => {
+  const isletme = Object.fromEntries(alanlar.map(a => [a, $(a).value.trim()]));
+  const yorumlar = $("yorumlar").value.split(/\n\s*\n/).map(s => s.trim()).filter(Boolean);
+  $("hata").textContent = "";
+  if (!isletme.ad || !isletme.bilgiler) { $("hata").textContent = "İşletme adını ve bilgilerini doldurun."; return; }
+  if (!yorumlar.length) { $("hata").textContent = "En az bir yorum yapıştırın."; return; }
+  try { localStorage.setItem("isletme", JSON.stringify(isletme)); } catch (_) {}
+  const d = $("calistir"); d.disabled = true; d.textContent = `${yorumlar.length} yorum hazırlanıyor…`;
+  try {
+    const r = await fetch("/api/yanitla", {method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({isletme, yorumlar})});
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.hata || r.status);
+    goster(j.sonuclar);
+  } catch (e) { $("hata").textContent = "Olmadı: " + e.message; }
+  finally { d.disabled = false; d.textContent = "Yanıtları hazırla"; }
+};
+
+function goster(liste) {
+  const sira = {yuksek: 0, normal: 1};
+  liste = liste.map((s, i) => ({...s, i})).sort((a, b) => (sira[a.aciliyet] ?? 1) - (sira[b.aciliyet] ?? 1) || a.i - b.i);
+  const say = k => liste.filter(s => s.duygu === k).length;
+  const konular = {};
+  liste.filter(s => s.duygu !== "olumlu").forEach(s => (s.konular || []).forEach(k => konular[k] = (konular[k] || 0) + 1));
+  const enCok = Object.entries(konular).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k, n]) => `${KONU[k] || k} (${n})`).join(", ");
+  const acil = liste.filter(s => s.aciliyet === "yuksek").length;
+  $("ozet").innerHTML = `<span><b>${liste.length}</b> yorum</span><span><b>${say("olumlu")}</b> olumlu</span>
+    <span><b>${say("olumsuz") + say("karisik")}</b> olumsuz/karışık</span>
+    ${acil ? `<span style="color:var(--uyari)"><b>${acil}</b> acil, önce siz bakın</span>` : ""}
+    ${enCok ? `<span>En sık şikayet: ${esc(enCok)}</span>` : ""}`;
+  $("sonuclar").innerHTML = liste.map((s, n) => `
+    <article class="kart ${s.aciliyet === "yuksek" ? "yuksek" : ""}">
+      <div class="ust">
+        ${s.aciliyet === "yuksek" ? `<span class="rozet uyari">Acil: ${esc(s.aciliyet_nedeni || "insan baksın")}</span>` : ""}
+        <span class="etiket">${DUYGU[s.duygu] || esc(s.duygu)}</span>
+        ${(s.konular || []).map(k => `<span class="etiket">${KONU[k] || esc(k)}</span>`).join("")}
+        ${s.durum === "hazir" ? `<span class="rozet iyi">Denetimden geçti</span>` : `<span class="rozet uyari">Elle düzenleyin</span>`}
+      </div>
+      <p class="yorum">“${esc(s.yorum)}”</p>
+      ${s.aciliyet === "yuksek" ? `<p class="not">Sağlık, güvenlik, hukuk ya da ayrımcılık içerebilir. Yayımlamadan önce gerekirse bir uzmana danışın.</p>` : ""}
+      <textarea id="y${n}" aria-label="Yanıt taslağı">${esc(s.yanit)}</textarea>
+      ${s.durum !== "hazir" ? (s.sorunlar || []).map(x => `<p class="sorun">• ${esc(x)}</p>`).join("") : ""}
+      <div class="dugmeler"><button data-kopya="y${n}">Kopyala</button></div>
+    </article>`).join("");
+  document.querySelectorAll("[data-kopya]").forEach(b => b.onclick = async () => {
+    try { await navigator.clipboard.writeText($(b.dataset.kopya).value); b.textContent = "Kopyalandı"; }
+    catch (_) { $(b.dataset.kopya).select(); b.textContent = "Seçildi, Ctrl+C"; }
+    setTimeout(() => b.textContent = "Kopyala", 1500);
+  });
+}
+</script>
+</body>
+</html>
