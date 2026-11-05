@@ -1,0 +1,21 @@
+[Unit]
+Description=Yorum Yanıtlayıcı herkese açık demo
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/yorum
+EnvironmentFile=/etc/yorum-demo.env
+ExecStart=/usr/bin/python3 canli.py
+Restart=always
+RestartSec=5
+MemoryMax=250M
+CPUQuota=60%
+NoNewPrivileges=true
+ProtectSystem=strict
+ReadWritePaths=/opt/yorum/kayitlar
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

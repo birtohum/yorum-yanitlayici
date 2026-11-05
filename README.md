@@ -66,3 +66,16 @@ yazan modelle aynı ve v2'deki ciddi hatayı kaçırdı; ona güvenmek yerine ku
   Meta'nın ürün geliştirmesinde kullanılabilir.
 - Yanıtlar taslaktır; acil işaretli olanlar yayımlanmadan önce bir insan (gerekirse avukat) tarafından okunmalı.
 - Sunucu yalnızca 127.0.0.1'de dinler; çok kullanıcılı yayın için kimlik doğrulama ve hız sınırı gerekir.
+
+## Herkese açık demo
+
+**Canlı:** https://51-20-66-93.sslip.io/
+
+Demo, `canli.py` ile çalışır. Arayüz ve API, `sunucu.py`'nin aynısıdır; üstüne kötüye kullanıma karşı sınırlar eklenmiştir:
+- Tek istekte en fazla 3 yorum işlenir.
+- Bir IP günde en fazla 15 yorum işletebilir; tüm ziyaretçiler için günlük sınır 400 yorumdur.
+- Sunucudaki toplam Meta harcaması 5 $'ı geçince demo durur.
+
+Yorumlar ve işletme bilgileri kaydedilmez. Günlük sayım için IP'nin yalnızca kısaltılmış özeti bellekte tutulur.
+
+Sunucu: AWS'de systemd servisi (`yorum-demo.service`, bellek 250 MB, CPU %60 ile sınırlı). Önde Caddy çalışır ve HTTPS sertifikasını kendisi alır.
