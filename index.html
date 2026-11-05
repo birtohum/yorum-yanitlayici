@@ -4,35 +4,78 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Yorum Yanıtlayıcı</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Müşteri yorumlarına, yalnızca işletmenizin verdiği bilgilere dayanan yanıt taslakları. Vermediğiniz indirimi, ikramı yazmaz.">
+<meta property="og:title" content="Yorum Yanıtlayıcı: kötü yoruma, söz vermeden cevap">
 <style>
-:root{--bg:#f6f5f1;--yuzey:#fff;--yazi:#1c1c1a;--soluk:#67655e;--cizgi:#e2dfd6;--vurgu:#1f5f4a;--vurgu-yazi:#fff;
---uyari:#9a3412;--uyari-zemin:#fdf0e7;--iyi:#1f5f4a;--iyi-zemin:#e8f3ee;--etiket:#efece4}
-@media (prefers-color-scheme:dark){:root{--bg:#151513;--yuzey:#1e1e1b;--yazi:#ecebe5;--soluk:#a19f96;--cizgi:#34332e;
---vurgu:#7fcfb0;--vurgu-yazi:#0e2a20;--uyari:#f4a574;--uyari-zemin:#3a2418;--iyi:#7fcfb0;--iyi-zemin:#183028;--etiket:#2a2925}}
+:root{--bg:#f4f1ea;--yuzey:#fffdf8;--yazi:#17201b;--soluk:#5f665f;--cizgi:#e1dccf;--vurgu:#1f5f4a;--vurgu-yazi:#fff;
+--uyari:#b4361f;--uyari-zemin:#fbe9e3;--iyi:#1f5f4a;--iyi-zemin:#e3f1ea;--etiket:#efebe1;--yildiz:#f2b01e;--koyu:#12241c}
+@media (prefers-color-scheme:dark){:root{--bg:#121512;--yuzey:#1b1f1b;--yazi:#ecebe5;--soluk:#a3a79f;--cizgi:#2f352f;
+--vurgu:#7fcfb0;--vurgu-yazi:#0e2a20;--uyari:#f4a574;--uyari-zemin:#3a2418;--iyi:#7fcfb0;--iyi-zemin:#183028;--etiket:#262b26;--koyu:#0b1510}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--yazi);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
-.sar{max-width:1100px;margin:0 auto;padding:24px 16px 64px}
-h1{font:600 24px/1.2 Georgia,serif;margin:0 0 4px}
-.alt{color:var(--soluk);margin:0 0 20px}
+body{margin:0;background:var(--bg);color:var(--yazi);font:15px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.sar{max-width:1100px;margin:0 auto;padding:0 16px 64px}
+.giris{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:56px 0 48px}
+@media (max-width:860px){.giris{grid-template-columns:1fr;gap:28px;padding:32px 0 32px}}
+.ust-etiket{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--vurgu)}
+h1{font:400 clamp(2.4rem,5.4vw,3.9rem)/1.02 "DM Serif Display",Georgia,serif;margin:10px 0 16px;letter-spacing:-.01em}
+h1 em{font-style:italic;color:var(--vurgu)}
+.alt{color:var(--soluk);font-size:17px;margin:0 0 22px;max-width:46ch}
+.git-dugme{display:inline-flex;align-items:center;gap:8px;background:var(--vurgu);color:var(--vurgu-yazi);text-decoration:none;font-weight:600;padding:12px 20px;border-radius:999px}
+.olcum{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px}
+.olcum div{font-size:13px;color:var(--soluk);max-width:170px}
+.olcum b{display:block;font:400 2rem/1 "DM Serif Display",Georgia,serif;color:var(--yazi);margin-bottom:4px}
+.sahne{background:var(--koyu);border-radius:22px;padding:40px 22px 22px;color:#eef3ef;box-shadow:0 30px 60px -30px rgba(18,36,28,.55);min-height:440px;position:relative;overflow:hidden}
+.sahne-not{position:absolute;top:14px;left:22px;font-size:11px;color:#8fa79a;letter-spacing:.04em}
+.yorum-kart{background:#fff;color:#1b1b1b;border-radius:14px;padding:14px 16px;transform:translateY(8px);opacity:0;transition:all .5s}
+.yorum-kart.var{transform:none;opacity:1}
+.kisi{display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px}
+.kisi i{width:30px;height:30px;border-radius:50%;background:#d9c7a7;display:grid;place-items:center;font-style:normal;color:#5b4425}
+.yildizlar{color:var(--yildiz);letter-spacing:2px;font-size:15px}
+.yildizlar s{color:#d5d5d5;text-decoration:none}
+.yorum-kart p{margin:8px 0 0;font-size:14.5px;line-height:1.5}
+.taslak{margin-top:16px;background:#1d3a2d;border:1px solid #2c5543;border-radius:14px;padding:14px 16px;min-height:150px;font-size:14.5px;line-height:1.6;opacity:0;transition:opacity .4s}
+.taslak.var{opacity:1}
+.taslak .baslik{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#8fc7ad;margin-bottom:6px;display:flex;justify-content:space-between;gap:10px}
+.taslak .soz{background:rgba(244,115,90,.18);border-radius:3px;transition:all .4s}
+.taslak .soz.yakalandi{text-decoration:line-through;text-decoration-color:#ff7a5c;text-decoration-thickness:2px;color:#ffb3a1}
+.imlec::after{content:"";display:inline-block;width:.45em;height:1em;background:#8fc7ad;vertical-align:-2px;margin-left:1px;animation:yanip 1s steps(1) infinite}
+@keyframes yanip{50%{opacity:0}}
+.rozetler{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;min-height:28px}
+.rz{font-size:12px;font-weight:600;border-radius:999px;padding:4px 10px;opacity:0;transform:scale(.9);transition:all .35s}
+.rz.var{opacity:1;transform:none}
+.rz.kirmizi{background:#4a2018;color:#ffb3a1}
+.rz.yesil{background:#1f4b38;color:#a8e6c6}
+@media (prefers-reduced-motion:reduce){.imlec::after{animation:none}.yorum-kart,.taslak,.rz{transition:none}}
+.nasil{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:8px 0 48px}
+@media (max-width:760px){.nasil{grid-template-columns:1fr}}
+.nasil div{border-top:2px solid var(--yazi);padding-top:12px}
+.nasil b{display:block;font:400 1.25rem "DM Serif Display",Georgia,serif;margin-bottom:4px}
+.nasil p{margin:0;color:var(--soluk);font-size:14px}
+#dene{scroll-margin-top:16px}
+.bolum-baslik{font:400 2rem/1.1 "DM Serif Display",Georgia,serif;margin:0 0 6px}
+.bolum-alt{color:var(--soluk);margin:0 0 18px}
 .izgara{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media (max-width:760px){.izgara{grid-template-columns:1fr}}
-.kutu{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:10px;padding:16px}
+.kutu{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:16px;padding:20px}
 .kutu h2{font-size:15px;margin:0 0 10px}
-label{display:block;font-size:13px;color:var(--soluk);margin:10px 0 4px}
-input,textarea{width:100%;font:inherit;color:inherit;background:var(--bg);border:1px solid var(--cizgi);border-radius:6px;padding:8px}
+label{display:block;font-size:13px;color:var(--soluk);margin:12px 0 5px}
+input,textarea{width:100%;font:inherit;color:inherit;background:var(--bg);border:1px solid var(--cizgi);border-radius:10px;padding:10px 12px}
+input:focus,textarea:focus{outline:2px solid var(--vurgu);outline-offset:-1px;border-color:transparent}
 textarea{resize:vertical}
-.ipucu{font-size:12px;color:var(--soluk);margin-top:4px}
+.ipucu{font-size:12px;color:var(--soluk);margin-top:6px}
 .dugmeler{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-button{font:inherit;border-radius:6px;padding:8px 14px;cursor:pointer;border:1px solid var(--cizgi);background:var(--yuzey);color:var(--yazi)}
+button{font:inherit;border-radius:999px;padding:10px 18px;cursor:pointer;border:1px solid var(--cizgi);background:var(--yuzey);color:var(--yazi)}
 button.ana{background:var(--vurgu);color:var(--vurgu-yazi);border-color:var(--vurgu);font-weight:600}
 button:disabled{opacity:.6;cursor:wait}
-#ozet{display:flex;gap:16px;flex-wrap:wrap;margin:20px 0 8px;font-size:14px;color:var(--soluk)}
-#ozet b{color:var(--yazi);font-size:18px}
-.kart{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:10px;padding:14px 16px;margin:10px 0}
+#ozet{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0 8px;font-size:14px;color:var(--soluk)}
+#ozet b{color:var(--yazi);font-size:20px}
+.kart{background:var(--yuzey);border:1px solid var(--cizgi);border-radius:16px;padding:16px 18px;margin:12px 0}
 .kart.yuksek{border-left:4px solid var(--uyari)}
 .ust{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12px;margin-bottom:6px}
-.etiket{background:var(--etiket);border-radius:4px;padding:1px 7px}
-.rozet{border-radius:4px;padding:1px 7px;font-weight:600}
+.etiket{background:var(--etiket);border-radius:999px;padding:2px 9px}
+.rozet{border-radius:999px;padding:2px 9px;font-weight:600}
 .rozet.uyari{background:var(--uyari-zemin);color:var(--uyari)}
 .rozet.iyi{background:var(--iyi-zemin);color:var(--iyi)}
 .yorum{color:var(--soluk);font-style:italic;margin:4px 0 8px}
@@ -40,15 +83,41 @@ button:disabled{opacity:.6;cursor:wait}
 .sorun{font-size:13px;color:var(--uyari);margin:6px 0 0}
 .not{font-size:13px;color:var(--uyari);margin:4px 0}
 #hata{color:var(--uyari);margin-top:10px}
-footer{margin-top:32px;font-size:12px;color:var(--soluk)}
+footer{margin-top:40px;font-size:12px;color:var(--soluk)}
+footer a{color:inherit}
 </style>
 </head>
 <body>
 <div class="sar">
-<h1>Yorum Yanıtlayıcı</h1>
-<p class="alt">Müşteri yorumlarını yapıştırın; her birine işletmeniz adına bir yanıt taslağı hazırlanır. Taslaklar yalnızca
-sizin yazdığınız bilgilere dayanır; vermediğiniz bir söz (indirim, iade, ikram…) içeren taslak işaretlenir.</p>
-
+<section class="giris">
+  <div>
+    <div class="ust-etiket">Küçük işletmeler için</div>
+    <h1>Kötü yoruma, <em>söz vermeden</em> cevap.</h1>
+    <p class="alt">Müşteri yorumlarını yapıştırın; her birine işletmeniz adına bir yanıt taslağı gelsin. Taslak yalnızca sizin yazdığınız bilgilere dayanır. Vermediğiniz bir indirimi, ikramı ya da iadeyi yazarsa ikinci bir denetim bunu yakalar.</p>
+    <a class="git-dugme" href="#dene">Kendi işletmenizle deneyin ↓</a>
+    <div class="olcum">
+      <div><b>15/15</b>daha önce hiç görülmemiş kuaför yorumunda taslak elle kabul edildi</div>
+      <div><b>2 kat</b>denetim: kural kodu ve ayrı bir model, ikisi de geçmeden taslak "hazır" sayılmaz</div>
+    </div>
+  </div>
+  <div class="sahne" aria-label="Örnek: kötü bir yorum, taslaktaki indirim sözünün yakalanması ve yanıtın yeniden yazılması" role="img">
+    <span class="sahne-not">ÖRNEK · denetimin yakaladığı türden bir söz</span>
+    <div class="yorum-kart" id="s-yorum">
+      <div class="kisi"><i>M</i><div>Merve K.<div class="yildizlar">★<s>★★★★</s></div></div></div>
+      <p>Kahve buz gibiydi, garson 20 dakika ilgilenmedi. Bir daha gelmem.</p>
+    </div>
+    <div class="taslak" id="s-taslak"><div class="baslik"><span>Yanıt taslağı · Lavanta Kafe</span><span id="s-adim">yazılıyor</span></div><div id="s-metin"></div></div>
+    <div class="rozetler"><span class="rz kirmizi" id="s-r1">Yakalandı: işletme indirim vermiyor</span><span class="rz yesil" id="s-r2">Yeniden yazıldı · denetimden geçti</span></div>
+  </div>
+</section>
+<section class="nasil">
+  <div><b>1. Bilgilerinizi yazın</b><p>Saatleriniz, kurallarınız, ne yapıp ne yapmadığınız. "İndirim yapmıyoruz" gibi olumsuzlar da.</p></div>
+  <div><b>2. Yorumları yapıştırın</b><p>Google, Yemeksepeti, Trendyol… Hepsi birlikte. Sağlık ve güvenlikle ilgili olanlar en üste çıkar.</p></div>
+  <div><b>3. Okuyun, kopyalayın</b><p>Geçemeyen taslak "elle düzenleyin" diye işaretlenir. Sizin yerinize hiçbir şey yayımlanmaz.</p></div>
+</section>
+<section id="dene">
+<h2 class="bolum-baslik">Deneyin</h2>
+<p class="bolum-alt">Örnek bir kafeyle doldurabilir ya da kendi işletmenizi yazabilirsiniz.</p>
 <div class="izgara">
   <section class="kutu">
     <h2>1. İşletmeniz</h2>
@@ -71,9 +140,10 @@ sizin yazdığınız bilgilere dayanır; vermediğiniz bir söz (indirim, iade, 
   </section>
 </div>
 
+</section>
 <div id="ozet"></div>
 <div id="sonuclar"></div>
-<footer>Yanıtlar yapay zekâ taslağıdır; yayımlamadan önce okuyun. Yorumlardaki telefon ve e-postalar modele gönderilmeden önce gizlenir.</footer>
+<footer>Yanıtlar yapay zekâ taslağıdır; yayımlamadan önce okuyun. Yorumlardaki telefon ve e-postalar modele gönderilmeden önce gizlenir. · Ege'nin projesi: <a href="https://birtohum.github.io/">birtohum.github.io</a></footer>
 </div>
 
 <script>
@@ -144,6 +214,29 @@ function goster(liste) {
     setTimeout(() => b.textContent = "Kopyala", 1500);
   });
 }
+
+// --- giriş sahnesi: denetimin bir sözü yakalayışı (örnek) ---
+(function () {
+  const AZ = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const ilk = ["Yaşadığınız deneyim için çok üzgünüz. ", {soz: "Bir sonraki ziyaretinizde size %20 indirim tanımlayalım. "}, "Sizi tekrar ağırlamak isteriz."];
+  const son = "Yaşadığınız deneyim için çok üzgünüz; kahvenizin soğuk gelmesi ve beklemeniz bizi de üzdü. Geri bildiriminizi ekibimizle paylaştık. Sizi daha iyi ağırlamayı çok isteriz.";
+  const m = $("s-metin"), bekle = (ms) => new Promise(r => setTimeout(r, AZ ? 0 : ms));
+  async function yaz(hedef, metin, hiz = 22) { for (const c of metin) { hedef.append(c); if (!AZ) await bekle(hiz); } }
+  async function dongu() {
+    for (;;) {
+      ["s-yorum", "s-taslak", "s-r1", "s-r2"].forEach(i => $(i).classList.remove("var")); m.innerHTML = ""; $("s-adim").textContent = "yazılıyor";
+      await bekle(500); $("s-yorum").classList.add("var"); await bekle(1100); $("s-taslak").classList.add("var");
+      m.classList.add("imlec"); let soz;
+      for (const p of ilk) { if (typeof p === "string") await yaz(m, p); else { soz = document.createElement("span"); soz.className = "soz"; m.append(soz); await yaz(soz, p.soz); } }
+      m.classList.remove("imlec"); $("s-adim").textContent = "denetleniyor"; await bekle(900);
+      soz.classList.add("yakalandi"); $("s-r1").classList.add("var"); await bekle(2200);
+      m.innerHTML = ""; m.classList.add("imlec"); $("s-adim").textContent = "yeniden yazılıyor"; await yaz(m, son, 16);
+      m.classList.remove("imlec"); $("s-adim").textContent = "hazır"; $("s-r2").classList.add("var");
+      if (AZ) return; await bekle(6000);
+    }
+  }
+  dongu();
+})();
 </script>
 </body>
 </html>
