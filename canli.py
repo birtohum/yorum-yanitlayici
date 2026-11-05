@@ -64,6 +64,7 @@ class CanliIsleyici(sunucu.Isleyici):
                     f'{ISTEK_YORUM} yorum, günde {IP_GUN} yorum. Yazdıklarınız kaydedilmez. '
                     f'<a href="https://github.com/birtohum/yorum-yanitlayici">Kaynak kod</a></p>')
             html = html.replace('<div id="hata"', not_ + '\n    <div id="hata"', 1)
+            html = html.replace("(en fazla 30)", f"(demoda ilk {ISTEK_YORUM} yorum işlenir)")
             return self._gonder(200, html.encode("utf-8"), "text/html; charset=utf-8")
         return super().do_GET()
 
